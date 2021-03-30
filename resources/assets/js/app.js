@@ -16,6 +16,9 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('post', require('./components/Post.vue'));
+Vue.component('comments', require('./components/Comments.vue'));
+Vue.component('navbar', require('./components/Navbar.vue'));
 
 const app = new Vue({
     el: '#app'

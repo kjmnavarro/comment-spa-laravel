@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/addcomment', 'CommentsController@addcomment');
+Route::post('/reply/{id}', 'CommentsController@replycomment');
+Route::get('/getcomments', 'CommentsController@getcomments');
+Route::get('/getreplies/{id}', 'CommentsController@getreplies');
